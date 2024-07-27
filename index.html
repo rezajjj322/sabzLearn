@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SabzLearn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/all.min.css">
+    <link rel="stylesheet" href="Bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-none-sm" href="#"><img src="images/logo.webp" alt="" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            فرانت اند
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">آموزش HTML</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش CSS</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش FLEX BOX</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش بوت استرپ</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش جاوااسکریپت</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش REACT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            امنیت
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">آموزش HTML</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش CSS</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش FLEX BOX</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش بوت استرپ</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش جاوااسکریپت</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش REACT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            پایتون
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">آموزش HTML</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش CSS</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش FLEX BOX</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش بوت استرپ</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش جاوااسکریپت</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش REACT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            مقالات
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">آموزش HTML</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش CSS</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش FLEX BOX</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش بوت استرپ</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش جاوااسکریپت</a></li>
+                            <li><a class="dropdown-item" href="#">آموزش REACT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true">درباره ما</a>
+                    </li>
+                </ul>
+                <form role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+            <div class="dark-mode mx-4">
+                <label class="switch">
+                    <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g fill="#ffd43b">
+                                <circle r="5" cy="12" cx="12"></circle>
+                                <path
+                                    d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                                </path>
+                            </g>
+                        </svg></span>
+                    <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path
+                                d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                            </path>
+                        </svg></span>
+                    <input type="checkbox" class="input">
+                    <span class="slider" onclick="toggleDarkMode()"></span>
+                </label>
+            </div>
+            <div class="signUp-btn fs-sm-1">
+                <button class="sign"><a href="#" class="login">ورود</a><br><a href="./login , sign-up/signUp.html">عضویت</a></button>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="row content-header">
+                <div class="col-12 col-sm-12 col-md-8">
+                    <img src="images/350_REpWIE1BUiAxNDctMTI.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 title">
+                    <p><span>توجه : </span>منتظر تخفیف های سبز لرن باشید</p>
+                    <h1>ما به هر قیمتی دوره تولید نمی کنیم</h1>
+                    <span class="lead">با آکادمی خصوصی سبزلرن، علم برنامه نویسی رو با خیال راحت یاد بگیر و پیشرفت
+                        کن</span>
+                    <button class="btn btn-primary w-50">از اینجا شروع کن</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End header -->
+
+    <!-- last courses -->
+
+    <section class="last-courses">
+        <div class="container">
+            <h2 class="my-5">آخرین دوره ها</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card card-body mb-5">
+                        <div>
+                            <img src="images/next-1536x864.webp" alt="" class="w-100 my-1">
+                        </div>
+                        <a href="Product-page/product.html"><h6 class="card-title mb-3">آموزش NEXT.JS به صورت پروژه محور</h6></a>
+                        <p class="card-text text-secondary mb-3">
+                            نکست یه فریمورک مبتنی بر ری‌اکت هست که امروزه تو بازار کار یکی از مهم‌ترین تکنولوژی‌ها...
+                        </p>
+                        <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> محمد امین سعیدی راد </span>
+                        <div class="card-footer d-flex justify-content-around">
+                            <span> <i class="fa-solid fa-users"></i> 506</span>
+                            <p class="price text-success h6">3,500,000 تومان</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card card-body mb-5">
+                        <div>
+                            <img src="images/0h1-768x432.webp" alt="" class="w-100 my-1">
+                        </div>
+                        <a href="Product-page/product2.html"><h6 class="card-title mb-3">ورود به دنیای امنیت / هکر</h6></a>
+                        <p class="card-text text-secondary mb-3">
+                            نکست یه فریمورک مبتنی بر ری‌اکت هست که امروزه تو بازار کار یکی از مهم‌ترین تکنولوژی‌ها...
+                        </p>
+                        <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> رضا دولتی </span>
+                        <div class="card-footer d-flex justify-content-around">
+                            <span> <i class="fa-solid fa-users"></i> 506</span>
+                            <p class="price text-success h6">3,500,000 تومان</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card card-body mb-5">
+                        <div>
+                            <img src="images/Course-thumbnail-Algorithm-1-768x432.webp" alt="" class="w-100 my-1">
+                        </div>
+                        <a href="Product-page/product3.html"><h6 class="card-title mb-3">آموزش ساختمان داده و الگوریتم</h6></a>
+                        <p class="card-text text-secondary mb-3">
+                            نکست یه فریمورک مبتنی بر ری‌اکت هست که امروزه تو بازار کار یکی از مهم‌ترین تکنولوژی‌ها...
+                        </p>
+                        <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> رضا دولتی </span>
+                        <div class="card-footer d-flex justify-content-around">
+                            <span> <i class="fa-solid fa-users"></i> 506</span>
+                            <p class="price text-success h6">3,500,000 تومان</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card card-body mb-5">
+                        <div>
+                            <img src="images/Course-thumbnail-Telebot-1-768x432.webp" alt="" class="w-100 my-1">
+                        </div>
+                        <a href="Product-page/product4.html"><h6 class="card-title mb-3">آموزش ساخت ربات تلگرام با php</h6></a>
+                        <p class="card-text text-secondary mb-3">
+                            نکست یه فریمورک مبتنی بر ری‌اکت هست که امروزه تو بازار کار یکی از مهم‌ترین تکنولوژی‌ها...
+                        </p>
+                        <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> علیرضا جمشیدی </span>
+                        <div class="card-footer d-flex justify-content-around">
+                            <span> <i class="fa-solid fa-users"></i> 506</span>
+                            <p class="price text-success h6">3,500,000 تومان</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card card-body mb-5">
+                        <div>
+                            <img src="images/next-1536x864.webp" alt="" class="w-100 my-1">
+                        </div>
+                        <a href="Product-page/product5.html"><h6 class="card-title mb-3">آموزش NEXT.JS به صورت پروژه محور</h6></a>
+                        <p class="card-text text-secondary mb-3">
+                            نکست یه فریمورک مبتنی بر ری‌اکت هست که امروزه تو بازار کار یکی از مهم‌ترین تکنولوژی‌ها...
+                        </p>
+                        <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> محمد امین سعیدی راد </span>
+                        <div class="card-footer d-flex justify-content-around">
+                            <span> <i class="fa-solid fa-users"></i> 506</span>
+                            <p class="price text-success h6">3,500,000 تومان</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card card-body mb-5">
+                        <div>
+                            <img src="images/0h1-768x432.webp" alt="" class="w-100 my-1">
+                        </div>
+                        <a href="Product-page/product6.html"><h6 class="card-title mb-3">ورود به دنیای امنیت / هکر</h6></a>
+                        <p class="card-text text-secondary mb-3">
+                            نکست یه فریمورک مبتنی بر ری‌اکت هست که امروزه تو بازار کار یکی از مهم‌ترین تکنولوژی‌ها...
+                        </p>
+                        <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> معین باغ شیخی </span>
+                        <div class="card-footer d-flex justify-content-around">
+                            <span> <i class="fa-solid fa-users"></i> 506</span>
+                            <p class="price text-success h6">3,500,000 تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End last courses -->
+
+    <!-- road map -->
+
+    <section class="road-map my-5">
+        <div class="container">
+            <h2>نقشه راه ها</h2>
+            <span class="h6 lead">نقشه های راه برای شروع اصولی یادگیری</span>
+            <div class="row">
+                <div class="col-3">
+                    <div class="front-end">
+                        <i class="fa-brands fa-slack"></i>
+                        <h3>فرانت اند</h3>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="security">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>امنیت</h3>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="python">
+                        <i class="fa-brands fa-python"></i>
+                        <h3>پایتون</h3>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="Soft-skills">
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                        <h3>مهارت های نرم</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End road map -->
+
+
+    <!-- help you -->
+
+    <section id="help">
+        <div class="container">
+            <h2 class="my-3">ما چه کمکی بهتون میکنیم؟</h2>
+            <span class="lead">از اونجایی که آکادمی آموزشی سبزلرن یک آکادمی خصوصی هست</span>
+            <div class="row items">
+                <div class="col col-6 help-item">
+                    <div class="row">
+                        <div class="col col-3 circle-1"></div>
+                        <div class="col col-9">
+                            <h5>دوره های اختصاصی</h5>
+                            <span class="lead">با پشتیبانی و کیفیت بالا ارائه میده. چون خوش نام بودن نام برند و منافع
+                                مشتری و حفظ شان دیگر همکارانش براش مهمه</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 help-item">
+                    <div class="row">
+                        <div class="col col-3 circle-2"></div>
+                        <div class="col col-9">
+                            <h5>اجازه تدریس</h5>
+                            <span class="lead">با پشتیبانی و کیفیت بالا ارائه میده. چون خوش نام بودن نام برند و منافع
+                                مشتری و حفظ شان دیگر همکارانش براش مهمه</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 help-item">
+                    <div class="row">
+                        <div class="col col-3 circle-3"></div>
+                        <div class="col col-9">
+                            <h5>دوره پولی یا رایگان</h5>
+                            <span class="lead">با پشتیبانی و کیفیت بالا ارائه میده. چون خوش نام بودن نام برند و منافع
+                                مشتری و حفظ شان دیگر همکارانش براش مهمه</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-6 help-item">
+                    <div class="row">
+                        <div class="col col-3 circle-4"></div>
+                        <div class="col col-9">
+                            <h5>اولویت بندی به ترتیب منافع</h5>
+                            <span class="lead">با پشتیبانی و کیفیت بالا ارائه میده. چون خوش نام بودن نام برند و منافع
+                                مشتری و حفظ شان دیگر همکارانش براش مهمه</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End help you -->
+
+
+    <!-- new courses -->
+
+    <section id="new-courses" class="my-5">
+        <div class="container">
+            <h3 class="my-5">جدید ترین دوره ها</h3>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card card-body mb-5">
+                            <div>
+                                <img src="images/Course-thumbnail-Telebot-1-768x432.webp" alt="" class="w-100 my-1">
+                            </div>
+                            <h6 class="card-title mb-3">آموزش ساخت ربات تلگرام با php</h6>
+                            <p class="card-text text-secondary mb-3">
+                                نکست یه فریمورک مبتنی بر ری‌اکت هست که امروزه تو بازار کار یکی از مهم‌ترین
+                                تکنولوژی‌ها...
+                            </p>
+                            <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> معین باغ شیخی </span>
+                            <div class="card-footer d-flex justify-content-around">
+                                <span> <i class="fa-solid fa-users"></i> 506</span>
+                                <p class="price text-success h6">3,500,000 تومان</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-body mb-5">
+                            <div>
+                                <img src="images/next-1536x864.webp" alt="" class="w-100 my-1">
+                            </div>
+                            <h6 class="card-title mb-3">آموزش NEXT.JS به صورت پروژه محور</h6>
+                            <p class="card-text text-secondary mb-3">
+                                نکست یه فریمورک مبتنی بر ری‌اکت هست که امروزه تو بازار کار یکی از مهم‌ترین
+                                تکنولوژی‌ها...
+                            </p>
+                            <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> محمد امین سعیدی راد
+                            </span>
+                            <div class="card-footer d-flex justify-content-around">
+                                <span> <i class="fa-solid fa-users"></i> 506</span>
+                                <p class="price text-success h6">3,500,000 تومان</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-body mb-5">
+                            <div>
+                                <img src="images/next-1536x864.webp" alt="" class="w-100 my-1">
+                            </div>
+                            <h6 class="card-title mb-3">آموزش NEXT.JS به صورت پروژه محور</h6>
+                            <p class="card-text text-secondary mb-3">
+                                نکست یه فریمورک مبتنی بر ری‌اکت هست که امروزه تو بازار کار یکی از مهم‌ترین
+                                تکنولوژی‌ها...
+                            </p>
+                            <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> محمد امین سعیدی راد
+                            </span>
+                            <div class="card-footer d-flex justify-content-around">
+                                <span> <i class="fa-solid fa-users"></i> 506</span>
+                                <p class="price text-success h6">3,500,000 تومان</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-body mb-5">
+                            <div>
+                                <img src="images/next-1536x864.webp" alt="" class="w-100 my-1">
+                            </div>
+                            <h6 class="card-title mb-3">آموزش NEXT.JS به صورت پروژه محور</h6>
+                            <p class="card-text text-secondary mb-3">
+                                نکست یه فریمورک مبتنی بر ری‌اکت هست که امروزه تو بازار کار یکی از مهم‌ترین
+                                تکنولوژی‌ها...
+                            </p>
+                            <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> محمد امین سعیدی راد
+                            </span>
+                            <div class="card-footer d-flex justify-content-around">
+                                <span> <i class="fa-solid fa-users"></i> 506</span>
+                                <p class="price text-success h6">3,500,000 تومان</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-body mb-5">
+                            <div>
+                                <img src="images/Course-thumbnail-Algorithm-1-768x432.webp" alt="" class="w-100 my-1">
+                            </div>
+                            <h6 class="card-title mb-3">آموزش ساختمان داده و الگوریتم</h6>
+                            <p class="card-text text-secondary mb-3">
+                                نکست یه فریمورک مبتنی بر ری‌اکت هست که امروزه تو بازار کار یکی از مهم‌ترین
+                                تکنولوژی‌ها...
+                            </p>
+                            <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> رضا دولتی </span>
+                            <div class="card-footer d-flex justify-content-around">
+                                <span> <i class="fa-solid fa-users"></i> 506</span>
+                                <p class="price text-success h6">3,500,000 تومان</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-body mb-5">
+                            <div>
+                                <img src="images/next-1536x864.webp" alt="" class="w-100 my-1">
+                            </div>
+                            <h6 class="card-title mb-3">آموزش NEXT.JS به صورت پروژه محور</h6>
+                            <p class="card-text text-secondary mb-3">
+                                نکست یه فریمورک مبتنی بر ری‌اکت هست که امروزه تو بازار کار یکی از مهم‌ترین
+                                تکنولوژی‌ها...
+                            </p>
+                            <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> محمد امین سعیدی راد
+                            </span>
+                            <div class="card-footer d-flex justify-content-around">
+                                <span> <i class="fa-solid fa-users"></i> 506</span>
+                                <p class="price text-success h6">3,500,000 تومان</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-body mb-5">
+                            <div>
+                                <img src="images/Course-thumbnail-Algorithm-1-768x432.webp" alt="" class="w-100 my-1">
+                            </div>
+                            <h6 class="card-title mb-3">آموزش ساختمان داده و الگوریتم</h6>
+                            <p class="card-text text-secondary mb-3">
+                                نکست یه فریمورک مبتنی بر ری‌اکت هست که امروزه تو بازار کار یکی از مهم‌ترین
+                                تکنولوژی‌ها...
+                            </p>
+                            <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> رضا دولتی </span>
+                            <div class="card-footer d-flex justify-content-around">
+                                <span> <i class="fa-solid fa-users"></i> 506</span>
+                                <p class="price text-success h6">3,500,000 تومان</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-body mb-5">
+                            <div>
+                                <img src="images/next-1536x864.webp" alt="" class="w-100 my-1">
+                            </div>
+                            <h6 class="card-title mb-3">آموزش NEXT.JS به صورت پروژه محور</h6>
+                            <p class="card-text text-secondary mb-3">
+                                نکست یه فریمورک مبتنی بر ری‌اکت هست که امروزه تو بازار کار یکی از مهم‌ترین
+                                تکنولوژی‌ها...
+                            </p>
+                            <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> محمد امین سعیدی راد
+                            </span>
+                            <div class="card-footer d-flex justify-content-around">
+                                <span> <i class="fa-solid fa-users"></i> 506</span>
+                                <p class="price text-success h6">3,500,000 تومان</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End new courses -->
+
+    <!-- last article -->
+
+    <section>
+        <div class="container">
+            <h3 class="my-3">آخرین مقالات</h3>
+            <div class="row my-5">
+                <div class="col-3">
+                    <div class="card card-body">
+                        <div>
+                            <img src="images/Install-Python-0.webp" alt="" class="img-fluid">
+                        </div>
+                        <h6 class="card-title">آموزش نصب پایتون</h6>
+                        <p class="card-text text-secondary text-center">
+                            زبان پایتون به عنوان یکی از محبوب‌ترین و داغ‌ترین زبان‌های برنامه نویسی در چند سال اخیر
+                            شناخته می‌شود که پتانسیل بالایی برای رشد دارد. از این زبان در هرجایی که…
+                        </p>
+                        <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> علیرضا جمشیدی
+                        </span>
+                        <a href="./article-page/article.html" class="btn btn-secondary">مطالعه مقاله</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card card-body">
+                        <div>
+                            <img src="images/JavaScript-programming-environment.webp" alt="" class="img-fluid">
+                        </div>
+                        <h6 class="card-title"> بهترین راه یادگیری جاوااسکریپت</h6>
+                        <p class="card-text text-secondary text-center">
+                            زبان پایتون به عنوان یکی از محبوب‌ترین و داغ‌ترین زبان‌های برنامه نویسی در چند سال اخیر
+                            شناخته می‌شود که پتانسیل بالایی برای رشد دارد. از این زبان در هرجایی که…
+                        </p>
+                        <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> محمد امین سعیدی راد
+                        </span>
+                        <a href="./article-page/article2.html" class="btn btn-secondary">مطالعه مقاله</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card card-body">
+                        <div>
+                            <img src="images/best-way-to-learn-Java-Script-1.webp" alt="" class="img-fluid">
+                        </div>
+                        <h6 class="card-title">آموزش flex box</h6>
+                        <p class="card-text text-secondary text-center">
+                            زبان پایتون به عنوان یکی از محبوب‌ترین و داغ‌ترین زبان‌های برنامه نویسی در چند سال اخیر
+                            شناخته می‌شود که پتانسیل بالایی برای رشد دارد. از این زبان در هرجایی که…
+                        </p>
+                        <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> رضا بهرامی
+                        </span>
+                        <a href="./article-page/article3.html" class="btn btn-secondary">مطالعه مقاله</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card card-body">
+                        <div>
+                            <img src="images/what-is-flexbox-1.webp" alt="" class="img-fluid">
+                        </div>
+                        <h6 class="card-title">محیط برنامه نویسی جاوااسکریپت</h6>
+                        <p class="card-text text-secondary text-center">
+                            زبان پایتون به عنوان یکی از محبوب‌ترین و داغ‌ترین زبان‌های برنامه نویسی در چند سال اخیر
+                            شناخته می‌شود که پتانسیل بالایی برای رشد دارد. از این زبان در هرجایی که…
+                        </p>
+                        <span class="mb-3 text-secondary"><i class="fa-solid fa-user"></i> محمد رحیمیان
+                        </span>
+                        <a href="./article-page/article4.html" class="btn btn-secondary">مطالعه مقاله</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End last article -->
+
+
+    <footer class="fa-border mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h5 class="my-3 bold">درباره ما</h5>
+                    <p class="lead text-right">سبزلرن یک اکادمی خصوصی آموزش برنامه نویسی هست که با هدف تحویل نیروی متخصص بر پایه تولید محتوای
+                    غیرسطحی فعالیت میکند</p>
+                </div>
+                <div class="col-3">
+                    <ul class="list-unstyled footer-menu">
+                        <li class="my-3 bold">دسترسی سریع</li>
+                        <li class="my-2 lead">قوانین مقررات</li>
+                        <li class="my-2 lead">ارسال تیکت</li>
+                        <li class="my-2 lead">همه دوره ها</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul class="list-unstyled footer-menu">
+                        <li class="my-3 bold">لینک های مفید</li>
+                        <li class="my-3 lead">آموزش جاوااسکریپت</li>
+                        <li class="my-2 lead">آموزش پایتون</li>
+                        <li class="my-2 lead">آموزش css</li>
+                        <li class="my-2 lead">آموزش html</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul class="list-unstyled footer-menu">
+                        <li class="my-3 bold">شبکه های اجتماعی</li>
+                        <li class="my-2"><i class="fa-brands fa-telegram"></i>@sabzLearn</li>
+                        <li class="my-2"><i class="fa-brands fa-instagram"></i>@sabzLearn</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <h6 class="lead text-center">Designer with : Alireza</h6>
+
+
+
+
+
+
+
+
+    
+    <script src="Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="fontawesome/all.min.js"></script>
+    <script src="asset.js"></script>
+</body>
+
+</html>

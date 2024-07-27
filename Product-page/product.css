@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    direction: rtl;
+}
+
+/* header */
+
+nav .container .logo{
+    width: 6rem;
+    height: 4rem;
+    margin: 10px;
+}
+
+.signUp-btn{
+    width: 125px;
+    display: flex;
+}
+
+.signUp-btn button{
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    color: #ffff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 25px;
+}
+
+.signUp-btn button a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.signUp-btn button .login{
+    border-left: 2px solid #fff;
+    padding: 5px 10px;
+}
+
+
+/* switch */
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #73C0FC;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    left: 2px;
+    bottom: 2px;
+    z-index: 2;
+    background-color: #e8e8e8;
+    transition: .4s;
+}
+
+.sun svg {
+    position: absolute;
+    top: 6px;
+    left: 36px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.moon svg {
+    fill: #73C0FC;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+/* .switch:hover */
+.sun svg {
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* .switch:hover */
+.moon svg {
+    animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.input:checked+.slider {
+    background-color: #183153;
+}
+
+.input:focus+.slider {
+    box-shadow: 0 0 1px #183153;
+}
+
+.input:checked+.slider:before {
+    transform: translateX(30px);
+}
+
+/* clock */
+
+.clock{
+    width: 100%;
+}
+
+#clock{
+    width: 250px;
+    border-radius: 5px;
+    background: #d0ffd0;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+#clock .clock-icon{
+    color: green;
+    font-size: 45px;
+    margin-left: 15px;
+}
+
+#clock .clock-content{
+    margin-top: 5px;
+}
+
+#clock .clock-content p{
+    font-weight: bold;
+}
+
+/* accordian */
+
+.accordian{
+    background: #ecffec;
+    border-radius: 10px;
+}
+.accordian h3{
+    text-align: right;
+    color: orange;
+}
+.accordian-button{
+    background: green;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    color: #ffff;
+}
+
+.accordian-content{
+    height: 100px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* footer */
+
+.bold{
+    font-weight: bold;
+}
+
+.footer-menu li{
+    cursor: pointer;
+}
+
+.footer-menu li svg{
+    font-size: 30px;
+   margin-left: 10px;
+}

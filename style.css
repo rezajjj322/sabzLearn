@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    direction: rtl;
+}
+
+.dark{
+    background: #414141;
+    color: #fff;
+}
+
+/* header */
+
+nav .container .logo{
+    width: 6rem;
+    height: 4rem;
+    margin: 10px;
+}
+
+.signUp-btn{
+    width: 125px;
+    display: flex;
+}
+
+.signUp-btn button{
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    color: #ffff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 25px;
+}
+
+.signUp-btn button a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.signUp-btn button .login{
+    border-left: 2px solid #fff;
+    padding: 5px 10px;
+}
+
+
+/* switch */
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #73C0FC;
+    transition: .4s;
+    border-radius: 30px;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #73C0FC;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    left: 2px;
+    bottom: 2px;
+    z-index: 2;
+    background-color: #e8e8e8;
+    transition: .4s;
+}
+
+.sun svg {
+    position: absolute;
+    top: 6px;
+    left: 36px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+.moon svg {
+    fill: #73C0FC;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+}
+
+/* .switch:hover */
+.sun svg {
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* .switch:hover */
+.moon svg {
+    animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.input:checked+.slider {
+    background-color: #183153;
+}
+
+.input:focus+.slider {
+    box-shadow: 0 0 1px #183153;
+}
+
+.input:checked+.slider:before {
+    transform: translateX(30px);
+}
+
+/* section content-header */
+
+.content-header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-header .title{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content-header .title p{
+    background: rgb(223, 223, 223);
+    text-align: center;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.content-header .title p span{
+    font-size: 18px;
+    color: green;
+}
+
+/* road map */
+
+.front-end{
+    background: linear-gradient(90deg, rgba(255,209,53,1) 33%, rgb(255, 252, 176) 100%);
+    color: #ffff;
+    width: 260px;
+    height: 160px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 60px 0;
+}
+
+.front-end svg{
+    font-size: 32px;
+}
+.security{
+    background: linear-gradient(90deg, rgba(193,236,255,1) 30%, rgba(53,255,59,1) 100%);
+    color: #ffff;
+    width: 260px;
+    height: 160px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 60px 0;
+}
+
+.security svg{
+    font-size: 32px;
+}
+.python{
+    background: linear-gradient(90deg, rgba(210,143,255,1) 30%, rgba(53,101,255,1) 100%);
+    color: #ffff;
+    width: 260px;
+    height: 160px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 60px 0;
+}
+
+.python svg{
+    font-size: 32px;
+}
+.Soft-skills{
+    background: linear-gradient(90deg, rgba(255,143,179,1) 0%, rgba(255,93,53,1) 100%);
+    color: #ffff;
+    width: 260px;
+    height: 160px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 60px 0;
+}
+
+.Soft-skills svg{
+    font-size: 32px;
+}
+
+/* help you */
+
+.items{
+    width: 100%;
+    height: 100%;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px!important;
+}
+
+.help-item{
+    background: #e7e7e7;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px -10px;
+    align-items: center;
+}
+
+.help-item .circle-1{
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(90deg, rgba(143,211,255,1) 0%, rgba(53,138,255,1) 100%);
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.help-item .circle-2{
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(90deg, rgba(143,255,184,1) 0%, rgba(71,255,53,1) 100%);
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.help-item .circle-3{
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(90deg, rgba(255,224,143,1) 0%, rgba(255,161,53,1) 100%);
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.help-item .circle-4{
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(90deg, rgba(255,143,252,1) 43%, rgba(255,53,247,1) 100%);
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+
+/* swiper */
+
+    .swiper {
+      width: 90%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (max-width: 760px) {
+      .swiper-button-next {
+        right: 20px;
+        transform: rotate(90deg);
+      }
+
+      .swiper-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
+      }
+    }
+
+
+    /* footer */
+
+    .bold{
+        font-weight: bold;
+    }
+
+    .footer-menu li{
+        cursor: pointer;
+    }
+
+    .footer-menu li svg{
+        font-size: 30px;
+       margin-left: 10px;
+    }
