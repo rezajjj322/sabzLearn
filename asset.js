@@ -1,25 +1,50 @@
-// swiper
+document.addEventListener("DOMContentLoaded", function () {
+    // slider
 
-var swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
-    direction: getDirection(),
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    on: {
-        resize: function () {
-            swiper.changeDirection(getDirection());
-        },
-    },
-});
+const sliderWrapper = document.querySelector(".slider-wrapper");
+const prevSlide = document.querySelector(".prev");
+const nextSlide = document.querySelector(".next");
+let currentIndex = 0;
+const total = document.querySelectorAll(".slider-item");
 
-function getDirection() {
-    var windowWidth = window.innerWidth;
-    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
 
-    return direction;
+if(nextSlide){
+    nextSlide.addEventListener("click", function () {
+        next("next")
+    })
 }
+
+if(prevSlide){
+    prevSlide.addEventListener("click", function () {
+        next("prev")
+    }
+    )
+}
+
+
+function next(direction) {
+    if (direction == "next") {
+        currentIndex++;
+        if (currentIndex == total.length) {
+            currentIndex = 0;
+        }
+        console.log(currentIndex)
+    } else {
+        if (currentIndex == 0) {
+            currentIndex = total.length - 1
+        } else {
+            currentIndex--
+            console.log(currentIndex)
+        }
+    }
+
+    for (let i = 0; i < total.length; i++) {
+        total[i].classList.remove("active")
+    }
+
+    total[currentIndex].classList.add("active")
+}
+
 
 // accordian
 
@@ -34,7 +59,6 @@ accordBtn.addEventListener("click", () => {
     }else{
         content.style.height = content.scrollHeight + "px"
     }
-    console.log(content)
 })
 
 
@@ -105,3 +129,4 @@ function setSuccess (input) {
     formControl.className = "form-controll success"
 
 }
+})
